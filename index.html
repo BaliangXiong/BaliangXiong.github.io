@@ -13173,10 +13173,10 @@ div#notebook {
 
 
 
-<div id="5d8f2661-3e78-409d-ae70-b4b6bb610cad"></div>
+<div id="519ac1df-ffc6-4633-b999-09776b01de75"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#5d8f2661-3e78-409d-ae70-b4b6bb610cad');
+var element = $('#519ac1df-ffc6-4633-b999-09776b01de75');
 function funDownload(content, filename) {
     cosole.log(content + filename);
     // 创建隐藏的可下载链接
@@ -13204,7 +13204,7 @@ function funDownload(content, filename) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -13234,8 +13234,11 @@ function funDownload(content, filename) {
 <span class="s1">    // 然后移除</span>
 <span class="s1">    document.body.removeChild(eleLink);</span>
 <span class="s1">};</span>
-<span class="s1">&lt;/script&gt;</span>
-<span class="s1">&lt;p&gt;&lt;button type=&quot;submit&quot; onclick = funDownload(&#39;用户定制流失预警天数.xls&#39;) &gt;下载以上表格&lt;/button&gt;&lt;/p&gt;</span>
+<span class="s1">&lt;/script&gt; </span>
+<span class="s1">&lt;p&gt;&lt;button type=&quot;submit&quot; onclick = funDownload(&#39;用户定制流失预警天数.xls&#39;) &gt;下载 用户定制流失预警天数表格&lt;/button&gt;&lt;/p&gt;</span>
+<span class="s1">&lt;p&gt;&lt;button type=&quot;submit&quot; onclick = funDownload(&#39;用户合约预警.xls&#39;) &gt;下载 用户合约预警 表格&lt;/button&gt;&lt;/p&gt;</span>
+<span class="s1">&lt;p&gt;&lt;button type=&quot;submit&quot; onclick = funDownload(&#39;用户模型指标说明.pdf&#39;) &gt;下载 用户模型指标说明 文档&lt;/button&gt;&lt;/p&gt;</span>
+
 <span class="s1">&#39;&#39;&#39;</span><span class="p">))</span>
 </pre></div>
 
@@ -13281,8 +13284,86 @@ function funDownload(filename) {
     // 然后移除
     document.body.removeChild(eleLink);
 };
+</script> 
+<p><button type="submit" onclick = funDownload('用户定制流失预警天数.xls') >下载 用户定制流失预警天数表格</button></p>
+<p><button type="submit" onclick = funDownload('用户合约预警.xls') >下载 用户合约预警 表格</button></p>
+<p><button type="submit" onclick = funDownload('用户模型指标说明.pdf') >下载 用户模型指标说明 文档</button></p>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#格式设置，放于最后</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">&lt;style type=&quot;text/css&quot; &gt;</span>
+<span class="s1">    font{</span>
+<span class="s1">        line-height:35px;</span>
+<span class="s1">    };</span>
+<span class="s1">    .input{</span>
+<span class="s1">        display: none;</span>
+<span class="s1">    };</span>
+<span class="s1">    div.output_prompt {</span>
+<span class="s1">    color: &#39;#ffffff&#39;!important;</span>
+<span class="s1">}</span>
+<span class="s1">    </span>
+<span class="s1">&lt;/style&gt;</span>
+<span class="s1">&lt;script&gt;  </span>
+<span class="s1">code_show=true; </span>
+<span class="s1">function code_hidden() { </span>
+<span class="s1">    $(</span><span class="se">\&#39;</span><span class="s1">div.input</span><span class="se">\&#39;</span><span class="s1">).hide();</span>
+<span class="s1">    $(</span><span class="se">\&#39;</span><span class="s1">div.output_prompt bdi</span><span class="se">\&#39;</span><span class="s1">).hide();</span>
+<span class="s1">}  </span>
+<span class="s1">$( document ).ready(code_hidden);</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[25]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<style type="text/css" >
+    font{
+        line-height:35px;
+    };
+    .input{
+        display: none;
+    };
+    div.output_prompt {
+    color: '#ffffff'!important;
+}
+    
+</style>
+<script>  
+code_show=true; 
+function code_hidden() { 
+    $('div.input').hide();
+    $('div.output_prompt bdi').hide();
+}  
+$( document ).ready(code_hidden);
 </script>
-<p><button type="submit" onclick = funDownload('用户定制流失预警天数.xls') >下载以上表格</button></p>
 
 </div>
 
@@ -13297,25 +13378,7 @@ function funDownload(filename) {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">downloadExcel</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">{</span>
-  	<span class="n">var</span> <span class="n">doc</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;table&quot;</span><span class="p">)[</span><span class="n">index</span><span class="p">]</span><span class="o">.</span><span class="n">parentNode</span><span class="p">;</span>
-    <span class="n">var</span> <span class="n">lHtml</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">innerHTML</span><span class="p">;</span>
-    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">lHtml</span><span class="p">);</span>
-  	<span class="n">var</span> <span class="n">tableHtml</span><span class="o">=</span><span class="s1">&#39;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;/head&gt;&lt;body&gt;&#39;</span><span class="p">;</span>
-  	<span class="n">tableHtml</span> <span class="o">+=</span> <span class="n">lHtml</span><span class="p">;</span>
-  	<span class="n">tableHtml</span> <span class="o">+=</span> <span class="s1">&#39;&lt;/body&gt;&lt;/html&gt;&#39;</span><span class="p">;</span>
-  	<span class="n">var</span> <span class="n">excelBlob</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Blob</span><span class="p">([</span><span class="n">tableHtml</span><span class="p">],</span> <span class="p">{</span><span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;application/vnd.ms-excel&#39;</span><span class="p">});</span>
-  	<span class="n">var</span> <span class="n">fileName</span> <span class="o">=</span> <span class="s1">&#39;excel.xls&#39;</span><span class="p">;</span>
-  	<span class="k">if</span><span class="p">(</span><span class="n">isIE</span><span class="p">()){</span>
-  		<span class="n">window</span><span class="o">.</span><span class="n">navigator</span><span class="o">.</span><span class="n">msSaveOrOpenBlob</span><span class="p">(</span><span class="n">excelBlob</span><span class="p">,</span><span class="n">fileName</span><span class="p">);</span>
-  	<span class="p">}</span><span class="k">else</span><span class="p">{</span>
-  		<span class="n">var</span> <span class="n">oa</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">);</span>
-  		<span class="n">oa</span><span class="o">.</span><span class="n">href</span> <span class="o">=</span> <span class="n">URL</span><span class="o">.</span><span class="n">createObjectURL</span><span class="p">(</span><span class="n">excelBlob</span><span class="p">);</span>
-  		<span class="n">oa</span><span class="o">.</span><span class="n">download</span> <span class="o">=</span> <span class="n">fileName</span><span class="p">;</span>
-  		<span class="n">document</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">oa</span><span class="p">);</span>
-  		<span class="n">oa</span><span class="o">.</span><span class="n">click</span><span class="p">();</span>
-  	<span class="p">}</span>
-  <span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
